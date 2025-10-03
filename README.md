@@ -2,9 +2,10 @@
 A wrapper to help running the experiments.
 
 ## How to use it
+Just simply put the files on the parent directory of your project and create an `instances` folder if there isn't one.
 
 ### Solver.py
-A dummy Solver class with a *solve()* method that returns the solution for a given problem.
+A dummy Solver class with a `solve` method that returns the solution for a given problem.
 
 ### main,py
 This is the main function that will read the input from `runner.py`, build the problem instance (currently an SC-QBF instance) and solve this instance using `Solver.py`. As is, `Solver.py` has to be on the same directory as `main.py`, but if you reference the path/package correctly you can change this as needed.
