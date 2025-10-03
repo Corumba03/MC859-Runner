@@ -36,7 +36,7 @@ def run_instance(file, t_out, log_dir):
         with open(log_file, "a") as fout:
             fout.write(f"\n--- Finished in {end - start:.2f} seconds ---\n")
 
-        print(f"Finished {filename} in {minutes:.0f}m{seconds:.2f}s\n", flush=True)
+        print(f"[{time.strftime('%H:%M')}] Finished {filename} in {minutes:.0f}m{seconds:.2f}s\n", flush=True)
         return filename, True
 
     except Exception as e:
