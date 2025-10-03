@@ -24,7 +24,7 @@ This is the main function that will read the input from `runner.py`, build the p
 
 ### runner.py
 
-This is a wrapper for `main.py` that runs multiple instances from an `instances` directory in parallel with a *minutes* time limit and output logs on a `logs_dir` directory (*logs* by default), you can change the output directory as needed. The `instances` directory and `main.py` have to be on the same directory as `runner.py`. The `logs_dir` directory will be created on the parent directory.
+This is a wrapper for `main.py` that runs multiple instances from an `instances` directory in parallel with a *minutes* time limit and output logs on a `logs_dir` directory (*logs* by default), you can change the output directory as needed. The `instances` directory and `main.py` have to be on the same directory as `runner.py`. The `logs_dir` directory will be created on the parent directory. The logs directory will be cleaned at the start of `runner.py` every time.
 
 As is, the log files will only contain the `Finished in [...]` and `Final Solution [solution]` (from `main.py`) or `Execution time out [...]`  messages. For anything else add it in `main.py` or on the solver itself accordingly, but make sure to set flush to True or it won't appear on the log file if the instance times out. 
 

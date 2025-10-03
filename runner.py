@@ -51,6 +51,8 @@ def main():
 
     # Prepare input directory
     os.makedirs(log_dir, exist_ok=True)
+
+    # Clean log directory
     for f in glob.glob(os.path.join(log_dir, "*")):
         try:
             os.remove(f)
